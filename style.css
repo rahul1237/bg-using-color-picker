@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 2em;
+    width: 3em;
+    height: 3em;
+    border: .4em solid black;
+    border-radius: 20%;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 .5em #111;
+}
+
+.fas{
+    margin: 1em;
+}
+
+input:hover{
+    animation: round 2s infinite;
+}
+
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(60deg);
+    }
+    20%{
+        transform: rotate(120deg);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(240deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
